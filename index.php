@@ -1,22 +1,4 @@
 <?php
-	// $users = [
-	// 	['id' 		=> 1,
-	// 	'username' 	=> 'John Doe',
-	// 	'email' 	=> 'john@example.com'],
-	// 	['id' 		=> 2,
-	// 	'username' 	=> 'Joseph Doe',
-	// 	'email' 	=> 'joseph@example.com'],
-	// 	['id' 		=> 3,
-	// 	'username' 	=> 'Jane Doe',
-	// 	'email' 	=> 'jane123@example.com'],
-	// 	['id' 		=> 4,
-	// 	'username' 	=> 'Rakhim Muratov',
-	// 	'email' 	=> 'rakhim@example.com'],
-	// 	['id' 		=> 13,
-	// 	'username' 	=> 'Pavel Zagainov',
-	// 	'email' 	=> 'pavel-zagainov@yandex.ru']
-	// ];
-
 	$pdo = new PDO('mysql:host=localhost;dbname=marlin-first;charset=utf8;', 'root', '');
 	$sql = 'SELECT * FROM users';
 	$statement = $pdo->query($sql);
@@ -37,7 +19,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h1>User management</h1>
-				<a href="create.html" class="btn btn-success">Add User</a>
+				<a href="create-form.php" class="btn btn-success">Add User</a>
 				
 				<table class="table">
 					<thead>
