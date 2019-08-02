@@ -39,7 +39,7 @@
 							<td><?= $user['email']; ?></td>
 							<td>
 								<a href="edit-form.php?id=<?= $user['id'] ?>" class="btn btn-warning">Edit</a>
-								<a href="#" onclick="return confirm('are you sure?')" class="btn btn-danger">Delete</a>
+								<a href="delete.php?id=<?= $user['id'] ?>" onclick="return confirm('are you sure?')" class="btn btn-danger">Delete</a>
 							</td>
 						</tr>
 						<?php } ?>
