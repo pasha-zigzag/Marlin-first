@@ -38,7 +38,7 @@
 							<td><?= $user['username']; ?></td>
 							<td><?= $user['email']; ?></td>
 							<td>
-								<a href="edit.html" class="btn btn-warning">Edit</a>
+								<a href="edit-form.php?id=<?= $user['id'] ?>" class="btn btn-warning">Edit</a>
 								<a href="#" onclick="return confirm('are you sure?')" class="btn btn-danger">Delete</a>
 							</td>
 						</tr>
